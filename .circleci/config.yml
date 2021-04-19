@@ -1,0 +1,19 @@
+version: 2.1
+orbs:
+  node: circleci/node@3.0.0
+jobs:
+  build-and-test:
+    executor:
+      name: node/default
+    working_directory: ~/coding-train/circle-ci-tutorial
+    steps:
+      - checkout:
+        path: ~/coding-train
+      - node/with-cache:
+        steps:
+          - run: npm install
+          - run: npm test
+workflows:
+  build-and-test:
+    jobs:
+      - build-and-test
