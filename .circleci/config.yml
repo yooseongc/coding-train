@@ -8,7 +8,7 @@ jobs:
     working_directory: ~/coding-train/circle-ci-tutorial
     steps:
       - checkout:
-        path: ~/coding-train
+          path: ~/coding-train
       - run: npm install
       - run: npm test
 workflows:
