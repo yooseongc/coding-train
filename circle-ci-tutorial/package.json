@@ -1,0 +1,17 @@
+{
+  "name": "circle-ci-tutorial",
+  "version": "1.0.0",
+  "description": "all about testing and ci",
+  "main": "sum.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Yooseong Choi",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
