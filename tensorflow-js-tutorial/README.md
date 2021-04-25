@@ -75,7 +75,8 @@ Backends/Platforms:
 ### via NPM
 
 > Add TensorFlow.js to your project using yarn or npm.   
-> Note: Because we use ES2017 syntax (such as import), this workflow assumes you are using a modern browser or a bundler/transpiler to convert your code to something older browsers understand. See our examples to see how we use Parcel to build our code. However, you are free to use any build tool that you prefer.
+> Note: Because we use ES2017 syntax (such as import), this workflow assumes you are using a modern browser or a bundler/transpiler to convert your code to something older browsers understand. See our examples to see how we use Parcel to build our code. However, you are free to use any build tool that you prefer.   
+
 ```javascript
 import * as tf from '@tensorflow/tfjs';
 
@@ -109,17 +110,17 @@ We have utility functions for common cases like Scalar, 1D, 2D, 3D and 4D tensor
 Creates a tf.Tensor with the provided values, shape and dtype.
 Parameters:
  * `values` 
-   * (TypedArray|Array) 
+   * TypedArray | Array
    * The values of the tensor. 
    * Can be nested array of numbers, or a flat array, or a `TypedArray`.
    *  If the values are strings, they will be encoded as utf-8 and kept as `Uint8Array[]`.
  * `shape` 
-   * (number[]) 
+   * number[]
    * The shape of the tensor.
    * If not provided, it is inferred from values. 
    * `Optional`
  * `dtype` 
-   * ('float32'|'int32'|'bool'|'complex64'|'string') 
+   * 'float32' | 'int32' | 'bool' | 'complex64' | 'string'
    * The data type. 
    * `Optional`
 
@@ -139,10 +140,10 @@ tf.tensor([1, 2, 3, 4], [2, 2])
 #### tf.scalar (values, dtype?) - function
 Creates rank-0 tf.Tensor (scalar) with the provided value and dtype.
  * `values` 
-   * (number|boolean|string|Uint8Array) 
+   * number|boolean|string|Uint8Array
    * The values of the scalar. 
  * `dtype` 
-   * ('float32'|'int32'|'bool'|'complex64'|'string') 
+   * 'float32'|'int32'|'bool'|'complex64'|'string'
    * The data type. 
    * `Optional`
 
@@ -436,17 +437,17 @@ const tv = ts.variable(0);
    * 최대한의 유연성 또는 제어가 필요할 때
    * 직렬화가 필요하지 않거나 자체적으로 직렬화 논리를 구현 가능할 때
  * Core API의 모델은 하나 이상의 Tensor를 사용하고 Tensor를 반환하는 함수임.
- * 아래는 Core API로 작성된 모델의 예시
-```javascript
-// The weights and biases for the two dense layers.
-const w1 = tf.variable(tf.randomNormal([784, 32]));
-const b1 = tf.variable(tf.randomNormal([32]));
-const w2 = tf.variable(tf.randomNormal([32, 10]));
-const b2 = tf.variable(tf.randomNormal([10]));
+ * 아래는 Core API로 작성된 모델의 예시   
+    ```javascript
+    // The weights and biases for the two dense layers.
+    const w1 = tf.variable(tf.randomNormal([784, 32]));
+    const b1 = tf.variable(tf.randomNormal([32]));
+    const w2 = tf.variable(tf.randomNormal([32, 10]));
+    const b2 = tf.variable(tf.randomNormal([10]));
 
-function model(x) {
-  return x.matMul(w1).add(b1).relu().matMul(w2).add(b2).softmax();
-}
-```
+    function model(x) {
+    return x.matMul(w1).add(b1).relu().matMul(w2).add(b2).softmax();
+    }
+    ```
  * 이 방법을 사용하면, 직접 모델의 가중치를 만들고 초기화할 책임이 생김.
  * `tf.Variable()`과 input tensor를 사용. 
