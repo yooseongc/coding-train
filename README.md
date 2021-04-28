@@ -6,7 +6,7 @@
 
 > Private Study with Daniel Shiffman's Coding Train
 
- 1. [Coding Challenge](coding-challenge/index.html)
+ 1. [Coding Challenge](coding-challenge/README.md)
  2. [Nature of Code](nature-of-code/README.md)
  3. [Circle CI tutorial](circle-ci-tutorial/README.md)
  4. [TensorFlow.js tutorial](tensorflow-js-tutorial/README.md)
