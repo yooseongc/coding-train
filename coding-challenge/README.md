@@ -139,8 +139,8 @@
 111. [Animated Sprites](./111_animated_sprites/)
 112. [3D Rendering](./112_3d_rendering/)
 113. [4D Hypercube](./113_4d_hypercube/)
-114. TODO
-115. TODO
+114. [Bubble Sort Visualization](./114_bubble_sort_visualization/)
+115. [Snake Game Redux](./115_snake_game_redux/)
 116. [Lissajous Curve Table](./116_lissajous_curve_table/)
 117. [Seven Segment Display](./117_seven_segment_display/)
 118. TODO
@@ -155,10 +155,13 @@
 127. TODO
 128. TODO
 129. TODO
-130. TODO
+130. Drawing with Fourier Transform and Epicycles
+     1. [Drawing with Fourier Transform and Epicycles Part 1](./130_drawing_with_fourier_transform_and_epicycles/part1/)
+     2. [Drawing with Fourier Transform and Epicycles Part 2](./130_drawing_with_fourier_transform_and_epicycles/part2/)
+     3. [Drawing with Fourier Transform and Epicycles Part 3](./130_drawing_with_fourier_transform_and_epicycles/part3/)
 131. [Bouncing DVD Logo](./131_bouncing_dvd_logo/)
 132. [Fluid Simulation](./132_fluid_simulation/)
-133. TODO
+133. [Times Tables Cardioid Visualization](./133_times_tables_cardioid_visualization/)
 134. TODO
 135. TODO
 136. TODO
@@ -175,16 +178,16 @@
 145. [2D Raycasting](./145_2d_raycasting/)
 146. [Rendering Raycasting](./146_rendering_raycasting/)
 147. [Chrome Dinosaur Game](./147_chrome_dinosaur_game/)
-148. TODO
+148. [Gift Wrapping Algorithm](./148_gift_wrapping_algorithm/)
 149. TODO
 150. TODO
 151. TODO
-152. TODO
+152. [RDP Line Simplification Algorithm](./152_rdp_line_simplification_algorithm/)
 153. TODO
 154. TODO
 155. TODO
 156. TODO
-157. TODO
+157. [Video Annotation with Machine Learning](./157_video_annotations_with_machine_learning/)
 158. TODO
 159. TODO
 160. Spring Forces
