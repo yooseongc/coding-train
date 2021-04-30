@@ -143,7 +143,7 @@
 115. [Snake Game Redux](./115_snake_game_redux/)
 116. [Lissajous Curve Table](./116_lissajous_curve_table/)
 117. [Seven Segment Display](./117_seven_segment_display/)
-118. TODO
+118. [Fractal Tree Bot using Mastodon](./118_fractal_tree_bot/README.md)
 119. TODO
 120. TODO
 121. TODO
