@@ -1,0 +1,15 @@
+html, body {
+  margin: 10;
+  padding: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+}
+
+canvas {
+  display: block;
+}

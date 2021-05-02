@@ -144,17 +144,17 @@
 116. [Lissajous Curve Table](./116_lissajous_curve_table/)
 117. [Seven Segment Display](./117_seven_segment_display/)
 118. [Fractal Tree Bot using Mastodon](./118_fractal_tree_bot/README.md)
-119. TODO
-120. TODO
-121. TODO
-122. TODO
-123. TODO
+119. [Binary to Decimal Conversion](./119_binary_to_decimal_conversion/)
+120. [Bit Shifting](./120_bit_shifting/)
+121. [Logo Interpreter](./121_logo_interpreter/)
+122. [Quick, Draw!](./122_quick_draw/)
+123. [Chaos Game](./123_chaos_game/)
 124. [Flocking Simulation](./124_flocking_simulation/)
 125. [Fourier Series](./125_fourier_series/)
-126. TODO
-127. TODO
-128. TODO
-129. TODO
+126. [Toothpicks](./126_toothpicks/)
+127. [Brownian Tree Snowflake](./127_brownian_tree_snowflake/)
+128. [SketchRNN Snowflakes](./128_sketchrnn_snowflakes/)
+129. [Koch Fractal Snowflake](./129_koch_fractal_snowflake/)
 130. Drawing with Fourier Transform and Epicycles
      1. [Drawing with Fourier Transform and Epicycles Part 1](./130_drawing_with_fourier_transform_and_epicycles/part1/)
      2. [Drawing with Fourier Transform and Epicycles Part 2](./130_drawing_with_fourier_transform_and_epicycles/part2/)
