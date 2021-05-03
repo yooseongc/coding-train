@@ -162,8 +162,8 @@
 131. [Bouncing DVD Logo](./131_bouncing_dvd_logo/)
 132. [Fluid Simulation](./132_fluid_simulation/)
 133. [Times Tables Cardioid Visualization](./133_times_tables_cardioid_visualization/)
-134. TODO
-135. TODO
+134. [Heart Curve](./134_heart_curve/)
+135. [GIF Loop](./135_gif_loop/)
 136. TODO
 137. TODO
 138. [Angry Birds with Matter.js](./138_angry_birds_with_matterjs/)
