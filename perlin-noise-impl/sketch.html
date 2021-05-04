@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>2D Perlin Noise Implementation</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <script src="perlin2d.js"></script>
+        <script src="libraries/p5.min.js"></script>
+        <script src="sketch.js"></script>
+    </head>
+
+    <body>
+        <div id="canvasDiv"></div>
+        <div>
+            <button onclick="regenerate()">Regenerate</button>
+            <button onclick="increaseResolution()">Increase Resolution</button>
+            <button onclick="decreaseResolution()">Decrease Resolution</button>
+            <button onclick="increasePerlinGridSize()">Increase Perlin Grid Size</button>
+            <button onclick="decreasePerlinGridSize()">Decrease Perlin Grid Size</button>
+        </div>
+    </body>
+
+</html>

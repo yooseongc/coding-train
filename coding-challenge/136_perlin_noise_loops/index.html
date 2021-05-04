@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>CC 136. Perlin Noise Loops</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <script src="libraries/p5.min.js"></script>
+        <script src="sketch.js"></script>
+        <script src="libraries/gif.js"></script>
+        <script src="libraries/gif.worker.js"></script>
+    </head>
+
+    <body>
+        <div class="flex-container">
+            <div>
+                <h3>Polar Perlin Noise Loops</h3>
+                <div id="part1-canvas"></div>
+            </div>
+            <br>
+            <div>
+                <h3>Perlin Noise GIF Loops</h3>
+                <div id="part2-canvas"></div>
+            </div>
+        </div>
+        <h3>Perlin Noise</h3>
+        <p><a href="https://en.wikipedia.org/wiki/Perlin_noise">Perlin noise</a> is a type of gradient noise developed by Ken Perlin.</p>
+        <p>
+            Perlin noise is most commonly implemented as a two-, three- or four-dimensional function, but can be defined for any
+            number of dimensions. An implementation typically involves three steps: defining a grid of random gradient vectors,
+            computing the dot product between the gradient vectors and their offsets, and interpolation between these values.
+        </p>
+        <ol type="1">
+            <li>Grid definition : Define an n-dimensional grid where each grid intersection has associated with it a fixed random n-dimensional
+            unit-length gradient vector, except in the one dimensional case where the gradients are random scalars between -1 and 1.
+            </li>
+            <li>Dot product : For each corner, we take the dot product between its gradient vector and the offset vector to the candidate point. This
+            dot product will be zero if the candidate point is exactly at the grid corner.
+
+            </li>
+            <li>Interpolation : The final step is interpolation between the 2<sup>n</sup> dot products. Interpolation is performed using a
+            function that has zero first derivative (and possibly also second derivative) at the 2<sup>n</sup> grid
+            nodes. Therefore, at points close to the grid nodes, the output will approximate the dot product of the gradient vector
+            of the node and the offset vector to the node.
+
+            </li>
+        </ol>
+    </body>
+
+</html>

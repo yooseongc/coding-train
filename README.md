@@ -12,3 +12,4 @@
  4. [TensorFlow.js tutorial](tensorflow-js-tutorial/README.md)
  5. [Toy Neural Network](toy-neural-network/README.md)
  6. [Chrome Extension tutorial](chrome-extension-tutorial/README.md)
+ 7. [Perlin Noise Implementation](perlin-noise-impl/README.md)

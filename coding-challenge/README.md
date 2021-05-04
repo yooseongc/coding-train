@@ -164,8 +164,8 @@
 133. [Times Tables Cardioid Visualization](./133_times_tables_cardioid_visualization/)
 134. [Heart Curve](./134_heart_curve/)
 135. [GIF Loop](./135_gif_loop/)
-136. TODO
-137. TODO
+136. [Perlin Noise Loops](./136_perlin_noise_loops/)
+137. [4D OpenSimplex Noise Loop](./137_4d_opensimplex_noise_loop/)
 138. [Angry Birds with Matter.js](./138_angry_birds_with_matterjs/)
 139. TODO
 140. TODO
@@ -179,7 +179,7 @@
 146. [Rendering Raycasting](./146_rendering_raycasting/)
 147. [Chrome Dinosaur Game](./147_chrome_dinosaur_game/)
 148. [Gift Wrapping Algorithm](./148_gift_wrapping_algorithm/)
-149. TODO
+149. [Tic Tac Toe](./149_tic_tac_toe/)
 150. TODO
 151. TODO
 152. [RDP Line Simplification Algorithm](./152_rdp_line_simplification_algorithm/)
