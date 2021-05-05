@@ -167,9 +167,9 @@
 136. [Perlin Noise Loops](./136_perlin_noise_loops/)
 137. [4D OpenSimplex Noise Loop](./137_4d_opensimplex_noise_loop/)
 138. [Angry Birds with Matter.js](./138_angry_birds_with_matterjs/)
-139. TODO
-140. TODO
-141. TODO
+139. [Calculating Digits of PI with Collision](./139_calculating_digits_of_pi_with_collision/)
+140. [Leibniz PI Approximation](./140_leibniz_pi_approximation/)
+141. [Calculating Digits of PI with Mandelbrot Set](./141_calculating_digits_of_pi_with_mandelbrot_set/)
 142. Rubik's Cube   
     1.   [Rubik's Cube Part 1](./142_rubiks_cube/part1/)   
     2.   [Rubik's Cube Part 2](./142_rubiks_cube/part2/)   
@@ -190,12 +190,12 @@
 157. [Video Annotation with Machine Learning](./157_video_annotations_with_machine_learning/)
 158. TODO
 159. TODO
-160. Spring Forces
-    3.   [Spring with OOP](./160_spring_forces/spring_oop/)
-    4.   [Simple Spring](./160_spring_forces/spring_simple/)
-    5.   [Soft Spring](./160_spring_forces/spring_soft/)
-    6.   [Spring Vector](./160_spring_forces/spring_vector/)
+160. Spring Forces 
+     1.   [Spring with OOP](./160_spring_forces/spring_oop/)
+     2.   [Simple Spring](./160_spring_forces/spring_simple/)
+     3.   [Soft Spring](./160_spring_forces/spring_soft/)
+     4.   [Spring Vector](./160_spring_forces/spring_vector/)
 161. Estimating PI Using Euclid Algorithm
-    7.   [Estimating PI from random numbers](./161_estimating_pi_using_euclid_algorithm/part1_from_random_numbers/)
-    8.   [Estimating PI from digits of PI](./161_estimating_pi_using_euclid_algorithm/part2_from_digits_of_pi/)
+     1.   [Estimating PI from random numbers](./161_estimating_pi_using_euclid_algorithm/part1_from_random_numbers/)
+     2.   [Estimating PI from digits of PI](./161_estimating_pi_using_euclid_algorithm/part2_from_digits_of_pi/)
 

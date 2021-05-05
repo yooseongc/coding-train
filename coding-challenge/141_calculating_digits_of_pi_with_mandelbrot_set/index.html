@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CC 141. Calculating Digits of PI with Mendelbrot Set</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="sketch.js"></script>
+  </head>
+
+  <body>
+    <h3>Calculating Digits of PI with Mendelbrot Set</h3>
+    <div id="canvasDiv"></div>
+    <div>
+        
+        <p>The reference of the below article is <a href="http://www.pi314.net/eng/mandelbrot.php">here.</a></p>
+        <IMG SRC="http://www.pi314.net/mathematiciens/mandelbrot/mandcol.gif" WIDTH="320" HEIGHT="240" ALIGN="RIGHT" BORDER="0">
+        <P>In 1991 David Bolle tried to verify if the
+            narrowing we can see at (-0.75,0) was actually infinitely thin. That is to
+            say that that however wide a non-zero width vertical line would be passing
+            through that point it would meet the fractal set before the x-axis.
+        <P>And D Bolle then had the idea of using the
+            point c=(-0.75,X) for the quadratic iteration and to make X tend to 0. And
+            there, what was his surprise when he counted the number of iterations before
+            which the series diverged and by discovering the following table:<BR>
+            <BR>
+        <TABLE BORDER="1" CELLPADDING="0">
+            <TR>
+                <TH><I>X</I></TH>
+        
+                <TH><I>iterations</I></TH>
+            </TR>
+            <TR>
+                <TD><I>1.0</I></TD>
+                <TD><I>3</I></TD>
+            </TR>
+            <TR>
+                <TD><I>0.1</I></TD>
+                <TD><I>33</I></TD>
+            </TR>
+            <TR>
+                <TD><I>0.01</I></TD>
+                <TD><I>315</I></TD>
+            </TR>
+            <TR>
+                <TD><I>0.001</I></TD>
+                <TD><I>3143</I></TD>
+            </TR>
+            <TR>
+                <TD><I>0.0001</I></TD>
+                <TD><I>31417</I></TD>
+            </TR>
+            <TR>
+                <TD><I>0.00001</I></TD>
+                <TD><I>314160</I></TD>
+            </TR>
+            <TR>
+                <TD><I>0.000001</I></TD>
+                <TD><I>3141593</I></TD>
+            </TR>
+            <TR>
+                <TD><I>0.0000001</I></TD>
+                <TD><I>31415928</I></TD>
+            </TR>
+        </TABLE>
+        <p><BR>
+            <BR>
+            Yes, it was Pi that was appearing magnificientely ! As he could not manage
+            to prove this he posted it in 1992 on the sci.maths newsgroup. Gerald Edgar
+            from a university of Ohio answered it on 27 march 1992 by bringing an intuitive
+            explanation of this result. This has been put lower down in the &quot;Trial&quot;
+            section.
+        </p>
+        <p>After this David Bolle approached the problem
+            with another point c=(0.25+X,0) which were those of the... well... butt part of
+            the set on the right.<BR>
+            Once again, same surprise, this time it is X<sup>1/2</sup>*n which tends to Pi. </p>
+        <TABLE BORDER="1" CELLPADDING="0">
+            <TR>
+                <TH><I>X</I></TH>
+        
+                <TH><I>iterations</I></TH>
+            </TR>
+            <TR>
+                <TD><I>1.0</I></TD>
+                <TD><I>2</I></TD>
+            </TR>
+            <TR>
+                <TD><I>0.1</I></TD>
+                <TD><I>8</I></TD>
+            </TR>
+            <TR>
+                <TD><I>0.01</I></TD>
+                <TD><I>30</I></TD>
+            </TR>
+            <TR>
+                <TD><I>0.001</I></TD>
+                <TD><I>97</I></TD>
+            </TR>
+            <TR>
+                <TD><I>0.0001</I></TD>
+                <TD><I>312</I></TD>
+            </TR>
+            <TR>
+                <TD><I>0.00001</I></TD>
+                <TD><I>991</I></TD>
+            </TR>
+            <TR>
+                <TD><I>0.000001</I></TD>
+                <TD><I>3140</I></TD>
+            </TR>
+            <TR>
+                <TD><I>0.0000001</I></TD>
+                <TD><I>9933</I></TD>
+            </TR>
+            <TR>
+                <TD><I>0.00000001</I></TD>
+                <TD><I>31414</I></TD>
+            </TR>
+            <TR>
+                <TD><I>0.000000001</I></TD>
+                <TD><I>99344</I></TD>
+            </TR>
+            <TR>
+                <TD><I>0.0000000001</I></TD>
+                <TD><I>314157</I></TD>
+            </TR>
+        </TABLE>
+        <p>In our visualization example, use c=(0.25+X, 0), X=1E-14</p>
+    </div>
+  </body>
+</html>
