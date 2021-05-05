@@ -186,10 +186,10 @@
 153. TODO
 154. TODO
 155. TODO
-156. TODO
+156. [Peeking inside PI](./156_peeking_inside_pi/)
 157. [Video Annotation with Machine Learning](./157_video_annotations_with_machine_learning/)
 158. TODO
-159. TODO
+159. [Simple Pendulum Simulation](./159_simple_pendulum_simulation/)
 160. Spring Forces 
      1.   [Spring with OOP](./160_spring_forces/spring_oop/)
      2.   [Simple Spring](./160_spring_forces/spring_simple/)
