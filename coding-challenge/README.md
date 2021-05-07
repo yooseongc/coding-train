@@ -181,10 +181,10 @@
 148. [Gift Wrapping Algorithm](./148_gift_wrapping_algorithm/)
 149. [Tic Tac Toe](./149_tic_tac_toe/)
 150. [AI Rainbows with RunwayML and StyleGAN](./150_ai_rainbows_with_runway_ml/)
-151. TODO
+151. [Ukulele Tuner with ML Pitch Detection Model](./151_ukulele_tuner_with_ml_pitch_detection_model/)
 152. [RDP Line Simplification Algorithm](./152_rdp_line_simplification_algorithm/)
-153. TODO
-154. TODO
+153. [Interactive Drawing with SketchRNN](./153_interactive_sketchrnn/)
+154. [Tic Tac Toe AI with Minimax Algorithm](./154_tic_tac_toe_ai_with_minimax_algorithm/)
 155. [Kaleidoscope Snowflake](./155_kaleidoscope_snowflake/)
 156. [Peeking inside PI](./156_peeking_inside_pi/)
 157. [Video Annotation with Machine Learning](./157_video_annotations_with_machine_learning/)
