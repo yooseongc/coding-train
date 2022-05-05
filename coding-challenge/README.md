@@ -198,4 +198,4 @@
 161. Estimating PI Using Euclid Algorithm
      1.   [Estimating PI from random numbers](./161_estimating_pi_using_euclid_algorithm/part1_from_random_numbers/)
      2.   [Estimating PI from digits of PI](./161_estimating_pi_using_euclid_algorithm/part2_from_digits_of_pi/)
-
+162. [Self Avoiding Walk](./162_self_avoiding_walk/)
