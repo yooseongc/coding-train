@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>#CC 163. Bézier curve</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <script src="libraries/p5.min.js"></script>
+        <script src="libraries/p5.sound.min.js"></script>
+    </head>
+
+    <body>
+        <h1>Bézier curve</h1>
+        <p>
+            A Bézier curve is a parametric curve used in computer graphics and related fields.
+            A set of discrete "control points" defines a smooth, continuous curve by means of a formula.
+            Usually the curve is intended to approximate a real-world shape.
+            Bézier curve is named after French engineer Pierre Bézier, who used it in the 1960s for designing curves for
+            the
+            bodywork of Renault cars.
+            Other uses include the design of computer fonts and animation.
+            Bézier curves can be combined to form a Bézier spline, or generalized to higher dimensions to form Bézier
+            surfaces.
+            The Bézier triangle is a special case of the latter.
+        </p>
+        <p>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Bezier_curve.svg/220px-Bezier_curve.svg.png">
+        <p>Cubic Bézier curve with four control points</p>
+        </p>
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/B%C3%A9zier_curve">Wikipedia (ENG)</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EB%B2%A0%EC%A7%80%EC%97%90_%EA%B3%A1%EC%84%A0">Wikipedia
+                    (KOR)</a></li>
+            <li><a href="https://thecodingtrain.com/CodingChallenges/163-bezier.html">Coding Challenge </a></li>
+        </ul>
+
+        <div class="flex-container">
+            <div>
+                <h3>Basic Bézier curve</h3>
+                <div id="basic"></div>
+            </div>
+            <div>
+                <h3>Bézier Vertex</h3>
+                <div id="bezier-vertex"></div>
+            </div>
+            <div>
+                <h3>Quadratic Bézier</h3>
+                <div id="quadratic-bezier"></div>
+            </div>
+            <div>
+                <h3>Cubic Bézier</h3>
+                <div id="cubic-bezier"></div>
+            </div>
+            
+        </div>
+
+
+        <script src="sketch.js"></script>
+    </body>
+
+</html>
