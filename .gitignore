@@ -1,8 +1,28 @@
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,node,web
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,node,web
+# ── Build output ────────────────────────────────────────────────────────────
+dist/
 
-### Node ###
-# Logs
+# ── Dependencies ────────────────────────────────────────────────────────────
+node_modules/
+
+# ── TypeScript ──────────────────────────────────────────────────────────────
+*.tsbuildinfo
+
+# ── Environment ─────────────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── Editor ──────────────────────────────────────────────────────────────────
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+# ── OS ──────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Logs
 logs
 *.log
 npm-debug.log*
