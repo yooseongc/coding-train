@@ -43,9 +43,20 @@
 
 | 컴포넌트 | 위치 | 역할 |
 |---|---|---|
-| P5Runner | `src/components/P5Runner/` | iframe 기반 p5.js 격리 실행기 + 콘솔 |
-| P5CodeView | `src/components/P5Runner/` | 코드 + 러너 분할 뷰 (좌우/상하/코드만) |
-| FileTree | `src/components/P5Runner/` | 파일 트리 사이드 패널 |
-| NestedSidebar | `src/components/layout/` | 접이식 카테고리 네비게이션 |
+| P5Runner | `src/components/P5Runner/` | study-ui-lib `IframeRunner` 래핑 (p5.js 특화) |
+| P5CodeView | `src/components/P5Runner/` | study-ui-lib `CodeViewer` 래핑 (p5.js 특화) |
+| P5MultiVersion | `src/components/P5Runner/` | 멀티 버전 탭 뷰 |
+| NestedSidebar | `src/components/layout/` | study-ui-lib `NestedSidebar` + 데이터 어댑터 |
 | CustomAppLayout | `src/components/layout/` | 3열 레이아웃 (사이드바/콘텐츠/TOC) |
 | ChallengeCard | `src/components/ChallengeCard/` | 챌린지 카드 (카테고리 페이지용) |
+
+### study-ui-lib 공통 컴포넌트 (Sprint 1-2에서 추출)
+
+| 컴포넌트 | 역할 |
+|---|---|
+| `IframeRunner` | 범용 iframe 실행기 (콘솔 브릿지, 전체화면, 키보드 단축키) |
+| `CodeViewer` | 멀티파일 코드 뷰어 (구문 강조, 복사, 다크/라이트 테마, 반응형) |
+| `FileExplorer` | 접이식 파일 트리 |
+| `ConsolePanel` | 콘솔 출력 패널 (레벨별 색상, 접근성) |
+| `NestedSidebar` | 계층형 네비게이션 (자동 확장, localStorage) |
+| `useIframeConsole` | iframe 콘솔 메시지 수신 훅 |

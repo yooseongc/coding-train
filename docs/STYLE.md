@@ -40,11 +40,16 @@ src/components/{ComponentName}/
 - `CardGrid cols={2}` + Link 카드
 - 아이콘 + 제목 + 난이도 뱃지 + 설명 + 태그
 
-### P5Runner (Phase 2에서 구현)
-- 분할 뷰: 코드 | 프리뷰
-- iframe 격리 실행
-- Play/Pause/Restart 컨트롤
+### P5Runner / CodeViewer (study-ui-lib 기반)
+- 분할 뷰: 코드 | 프리뷰 (좌우/상하/코드만 레이아웃)
+- iframe 격리 실행 (IframeRunner)
+- Play/Pause/Restart + 전체화면 컨트롤
+- 키보드 단축키: Ctrl+Enter (재시작), Space (일시정지)
+- 코드 복사 버튼
+- 다크 모드: vscDarkPlus, 라이트 모드: oneLight 구문 강조
+- 모바일 1024px 미만: 자동 vertical 전환, FileTree 숨김
 - 멀티 파일 탭, 멀티 버전 탭
+- 접근성: aria-label, role=log, focus-visible 링
 
 ## 난이도 표시
 

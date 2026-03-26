@@ -180,6 +180,27 @@
 
 ---
 
-## 프로젝트 완료 (2026-03-27)
+## Phase 12: 컴포넌트 공통화 및 UX 개선
 
-모든 coding challenge 포팅 및 검증 완료. 가이드 섹션 포팅 완료. 전체 프로젝트 재구축 작업 종료.
+### 2026-03-27
+- [x] SPA 새로고침 시 base path(`/coding-train`) 누락 버그 수정
+- [x] Perlin Noise 가이드 데모 `canvas.parent('#canvasDiv')` 오류 수정
+- [x] `.gitignore`에 `.claude/settings.local.json`, `.claude/worktrees/` 추가
+- [x] README.md `master` → `main` 수정
+
+#### Sprint 1: study-ui-lib 공통 컴포넌트 추출
+- [x] `IframeRunner` — 범용 iframe 실행기 (콘솔 브릿지, Pause/Restart)
+- [x] `useIframeConsole` — iframe 콘솔 메시지 수신 훅
+- [x] `ConsolePanel` — 독립 콘솔 출력 패널 (레벨 아이콘/색상, 자동 스크롤)
+- [x] `CodeViewer` — 멀티파일 코드 뷰어 (구문 강조, 레이아웃 모드, 파일 탭)
+- [x] `FileExplorer` — 접이식 파일 트리 (폴더 그룹, 아이콘)
+- [x] `NestedSidebar` — 계층형 네비게이션 (자동 확장, localStorage 상태)
+- [x] coding-train 컴포넌트를 study-ui-lib 래핑으로 전환 (P5Runner, P5CodeView, NestedSidebar)
+- [x] study-ui-lib docs-site 문서 업데이트
+
+#### Sprint 2: 코드 뷰어/러너 UX 개선
+- [x] IframeRunner: 전체화면 모드, 키보드 단축키 (Ctrl+Enter, Space), 반응형 컨트롤
+- [x] CodeViewer: 코드 복사 버튼, 라이트 모드 구문 강조 테마(oneLight), 모바일 자동 vertical 전환
+- [x] ConsolePanel: 라이트 모드 색상 대비 개선
+- [x] 전체: aria-label, role=log/status, focus-visible 링 접근성 개선
+- [x] study-ui-lib docs-site Sprint 2 반영
