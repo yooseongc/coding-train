@@ -10,8 +10,7 @@ let randomGraphic;
 let perlinGraphic;
 
 function setup() {
-    const canvas = createCanvas(w + mw + w, h);
-    canvas.parent('#canvasDiv');
+    createCanvas(w + mw + w, h);
     noStroke();
     generateRandom();
     generatePerlin();

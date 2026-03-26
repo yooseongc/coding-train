@@ -12,7 +12,8 @@
                 var p = sp.get('p');
                 if (p) {
                     var q = sp.get('q') || '';
-                    var newUrl = p + (q ? '?' + q : '') + window.location.hash;
+                    var base = '/coding-train';
+                    var newUrl = base + p + (q ? '?' + q : '') + window.location.hash;
                     window.history.replaceState(null, '', newUrl);
                 }
             })();
