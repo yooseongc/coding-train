@@ -160,3 +160,26 @@
   - 161 Estimating Pi: 2파트 (milliondigits.txt, pi1000000.txt 데이터 파일 포함)
 - [x] TypeScript + Vite 빌드 통과 (17개 SPA 라우트)
 - [x] KNOWN_ISSUES.md 업데이트 (멀티 러너 항목 해결 표시)
+
+## Phase 11: 최종 검증 및 이슈 해결
+
+### 2026-03-27
+- [x] 불필요한 notice/경고 제거 (041, 057, 058, 066, 075, 097, 113, 128, 151, 153)
+- [x] 079 Number Guessing Chatbot — codeOnly 해제, RiveScript 정상 동작
+- [x] 080 Voice Chatbot — codeOnly 해제, p5.speech + RiveScript 정상 동작
+- [x] 097 The Book of Pi — iframe sandbox에 allow-modals 추가, PDF 생성 정상
+- [x] 121 Logo Interpreter — bodyHtml에 입력 폼/프리셋 셀렉터 추가
+- [x] 134 Heart Curve part2 — GIF recording gif.worker.js 경로 문제 해결
+- [x] 136 Perlin Noise Loops part2 — GIF recording gif.worker.js 경로 문제 해결
+- [x] 162 Self-Avoiding Walk — RESET 시 버튼 증식 문제 해결
+- [x] 157 Video Annotations with ML — codeOnly 전환 (WebGL + 카메라 iframe 제한)
+- [x] 158 Shape Classifier — 정상 동작 확인
+- [x] P5CodeView 대용량 파일 표시 제한 추가 (130 codingtrain.js 등)
+- [x] GitHub Pages 404.html SPA 리다이렉트 지원
+- [x] KNOWN_ISSUES.md 최종 업데이트
+
+---
+
+## 프로젝트 완료 (2026-03-27)
+
+모든 coding challenge 포팅 및 검증 완료. 가이드 섹션 포팅 완료. 전체 프로젝트 재구축 작업 종료.
