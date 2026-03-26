@@ -33,8 +33,13 @@
 
 ## 배포
 
- - gh action을 이용한 구조로 전면 수정할 예정
- - react의 static site rendering 및 browser routing을 사용할 것임. network-study와 cert-study를 참고할 것
+ - GitHub Actions (.github/workflows/deploy.yml)로 main 브랜치 push 시 자동 배포
+ - React + Vite 정적 빌드 + SPA 라우트 생성 (scripts/generate-spa-routes.js)
+ - https://yooseongc.github.io/coding-train 에 GitHub Pages 배포
+
+## 브랜치
+
+ - main: 기본 브랜치 (구 master에서 변경됨)
 
 ## 참고 사이트
 

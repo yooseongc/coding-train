@@ -126,3 +126,17 @@
 - [x] 전체 빌드 통과 (tsc + vite build + 17개 SPA 라우트)
 - [x] UI 리뷰 스킬 업데이트
 - [x] PROCESS.md / PAGES.md 최종 업데이트
+
+## 버그 수정 및 배포
+
+### 2026-03-26
+- [x] 챌린지별 에셋 누락 수정 (이미지, 사운드, 폰트, JSON, CSV, TXT)
+- [x] 파일 로딩 순서 수정 (toxi_index.js, rectangle.js, turtle.js 등)
+- [x] 라이브러리 추가 (p5.sound, p5.easycam, matter.js, dat.gui, gif.js, tf.js, ml5.js, mappa.js, p5.pdf.js, p5.collide2d)
+- [x] bodyHtml 주입으로 특수 DOM 요소 지원 (037, 042, 044, 066, 073, 075, 079, 080, 094, 100, 122, 140, 141, 151, 158)
+- [x] codeOnly 처리 (039, 045, 079, 080, 082-084, 118, 150, 157)
+- [x] P5Runner에 `<base>` 태그 추가로 상대 경로 에셋 로딩 지원
+- [x] iframe sandbox에 allow-popups + allow="microphone; camera" 추가
+- [x] KNOWN_ISSUES.md 작성 (멀티 러너 전환 필요, codeOnly, notice 목록)
+- [x] master → main 브랜치 이름 변경
+- [x] GitHub Actions 배포 완료 (https://yooseongc.github.io/coding-train)
