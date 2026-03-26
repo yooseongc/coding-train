@@ -11,6 +11,11 @@ registerChallenge({
     references: [
         { title: 'Coding Challenge #130: Drawing with Fourier Transform and Epicycles', url: 'https://thecodingtrain.com/challenges/130-drawing-with-fourier-transform-and-epicycles' },
     ],
+    versions: [
+        { label: 'part1', files: [{ name: 'codingtrain.js', content: '' }, { name: 'fourier.js', content: '' }, { name: 'sketch.js', content: '' }] },
+        { label: 'part2', files: [{ name: 'fourier.js', content: '' }, { name: 'sketch.js', content: '' }] },
+        { label: 'part3', files: [{ name: 'codingtrain.js', content: '' }, { name: 'complex.js', content: '' }, { name: 'fourier.js', content: '' }, { name: 'sketch.js', content: '' }] },
+    ],
     tags: ['fourier', 'transform', 'epicycles', 'DFT'],
     difficulty: 'advanced',
     explanation: [

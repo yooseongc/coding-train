@@ -14,7 +14,6 @@ registerChallenge({
     ],
     tags: ['timer', 'countdown', 'time', 'event'],
     difficulty: 'beginner',
-    notice: '이 챌린지는 HTML에 타이머 표시용 DOM 요소(#timer)가 필요합니다. p5 러너에서는 타이머 텍스트가 표시되지 않을 수 있습니다.',
     explanation: [
         'getURLParams()로 쿼리 파라미터(?minute=N)에서 분 단위 시간을 읽어 timeLeft에 초 단위로 변환합니다. noCanvas()로 캔버스 없이 DOM 요소(#timer)로 시간을 표시합니다.',
         'setInterval(updateTime, 1000)으로 1초마다 updateTime을 호출합니다. millis()로 경과 시간을 측정하고 floor()로 초 단위로 변환하여 남은 시간(timeLeft - currentTime)을 계산합니다.',

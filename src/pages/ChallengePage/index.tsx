@@ -142,6 +142,7 @@ export default function ChallengePage() {
             {!loading && !error && !challenge.codeOnly && hasVersions && versionFiles.length > 0 && (
                 <P5MultiVersion
                     versions={versionFiles}
+                    challengeId={challenge.id}
                     width={challenge.canvasWidth ?? 600}
                     height={challenge.canvasHeight ?? 600}
                 />

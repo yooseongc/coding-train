@@ -172,7 +172,7 @@ export default function P5Runner({
                     key={key}
                     srcDoc={srcdoc}
                     title="p5.js sketch"
-                    sandbox="allow-scripts allow-same-origin allow-popups"
+                    sandbox="allow-scripts allow-same-origin allow-popups allow-modals"
                     allow="microphone; camera"
                     className="w-full border-0"
                     style={{ height: height + 60 }}

@@ -14,7 +14,6 @@ registerChallenge({
     ],
     tags: ['tuner', 'pitch', 'ml5', 'audio'],
     difficulty: 'intermediate',
-    notice: '이 챌린지는 ml5.js의 Pitch Detection 모델과 마이크 접근이 필요합니다. iframe sandbox 제한으로 마이크가 동작하지 않을 수 있습니다.',
     explanation: [
         'CREPE는 단음 피치 감지를 위한 딥러닝 모델입니다. ml5.pitchDetection()으로 마이크 입력의 주파수를 실시간 감지하고, 가장 가까운 음(note)을 표시하는 악기 튜너를 구현합니다.',
         'GUITAR_NOTES(E2~E4)와 UKULELE_NOTES(G4,C4,E4,A4) 객체에 표준 주파수를 정의합니다. 감지된 주파수와 각 음의 차이(diff)를 비교하여 가장 가까운 음과 편차를 계산합니다.',

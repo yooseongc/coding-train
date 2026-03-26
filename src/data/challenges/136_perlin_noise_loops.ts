@@ -13,7 +13,10 @@ registerChallenge({
     ],
     tags: ['perlin', 'noise', 'loop', 'seamless'],
     difficulty: 'intermediate',
-    notice: '이 챌린지는 특수한 HTML 구조(div 컨테이너)가 필요하여 p5 인스턴스 모드로 실행됩니다. 일부 기능이 정상 동작하지 않을 수 있습니다.',
+    versions: [
+        { label: 'part1', files: [{ name: 'sketch.js', content: '' }] },
+        { label: 'part2', files: [{ name: 'sketch.js', content: '' }], libraries: ['gif.js'] },
+    ],
     explanation: [
         'Perlin noise에서 매끄러운 루프를 만들려면 noise 공간에서 원형 경로를 따라가야 합니다. cos(angle)과 sin(angle)을 xoff, yoff로 매핑하면 시작과 끝이 자연스럽게 연결됩니다.',
         'Part1은 NoiseLoop을 이용한 변형 원입니다. 각도 0~TWO_PI를 5도 간격으로 순회하며, noise(xoff, yoff, zoff)로 각 방향의 반지름을 100~height/2로 매핑합니다. noiseMax 슬라이더로 변형 정도를 조절합니다.',

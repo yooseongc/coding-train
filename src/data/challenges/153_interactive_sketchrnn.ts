@@ -13,7 +13,6 @@ registerChallenge({
     ],
     tags: ['sketchRNN', 'interactive', 'ml5', 'drawing'],
     difficulty: 'intermediate',
-    notice: '이 챌린지는 ml5.js의 SketchRNN 모델이 필요합니다. 모델 로드에 시간이 걸리거나 실패할 수 있습니다.',
     explanation: [
         'ml5.sketchRNN("catpig") 모델을 로드하여 사용자의 드로잉을 AI가 이어서 완성합니다. 마우스를 누르면 사용자 드로잉 모드, 떼면 AI 생성 모드로 전환됩니다.',
         '사용자가 그린 점들(seedPoints)을 RDP 알고리즘으로 단순화합니다. 단순화된 경로를 dx/dy 형식의 seedPath로 변환하고, sketchRNN.generate(seedPath, gotStrokePath)로 AI에 전달합니다.',

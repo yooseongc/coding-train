@@ -13,7 +13,12 @@ registerChallenge({
     ],
     tags: ['bezier', 'curve', 'interpolation', 'lerp'],
     difficulty: 'intermediate',
-    notice: '이 챌린지는 p5 인스턴스 모드와 특수 DOM 컨테이너가 필요합니다. 일부 기능이 정상 동작하지 않을 수 있습니다.',
+    versions: [
+        { label: 'basic', files: [{ name: 'sketch.js', content: '' }] },
+        { label: 'bezier-vertex', files: [{ name: 'sketch.js', content: '' }] },
+        { label: 'quadratic', files: [{ name: 'sketch.js', content: '' }] },
+        { label: 'cubic', files: [{ name: 'sketch.js', content: '' }] },
+    ],
     explanation: [
         '베지에 곡선은 제어점 사이의 선형 보간(lerp)을 재귀적으로 적용하여 만드는 매끄러운 곡선입니다. t가 0에서 1로 변할 때 보간 중간점들의 궤적이 곡선을 형성합니다.',
         'Basic 스케치는 p5.js의 bezier() 함수를 사용합니다. 4개의 제어점(시작, 두 핸들, 끝)을 마우스로 조작하고, 핸들과의 연결선을 그려 곡선과의 관계를 보여줍니다.',

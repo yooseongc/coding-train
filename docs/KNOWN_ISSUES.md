@@ -1,16 +1,16 @@
 # Known Issues — 챌린지 비정상 목록
 
-## 멀티 러너 전환 필요 (p5 인스턴스 모드)
+## ~~멀티 러너 전환 필요 (p5 인스턴스 모드)~~ — 해결됨 (2026-03-26)
 
-| # | 챌린지 | 설명 |
+> 모든 인스턴스 모드 챌린지를 글로벌 모드로 변환하고 P5MultiVersion 탭으로 분리 완료
+
+| # | 챌린지 | 해결 |
 |---|---|---|
-| 123 | Chaos Game | part1/part2 캔버스 분리, `new p5()` 인스턴스 모드 |
-| 134 | Heart Curve | part1/part2 캔버스 분리, GIF 녹화 |
-| 136 | Perlin Noise Loops | part1/part2 캔버스 분리, GIF 녹화 |
-| 162 | Self-Avoiding Walk | part1/part2/part3 캔버스 분리 |
-| 163 | Bezier Curves | basic/bezierVertex 등 다중 캔버스 |
-
-> 추후 P5MultiVersion 또는 멀티 러너 컴포넌트로 전환하여 각 파트를 별도 iframe에서 실행해야 함
+| 123 | Chaos Game | 2파트 분리 (part1: Sierpinski, part2: Pentagonal) |
+| 134 | Heart Curve | 2파트 분리 (part1: 기본, part2: 비팅+GIF) |
+| 136 | Perlin Noise Loops | 2파트 분리 (part1: Polar, part2: Particles+GIF) |
+| 162 | Self-Avoiding Walk | 6파트 분리 (basic, backtracking, 3D, bezier, recursive, random) |
+| 163 | Bezier Curves | 4파트 분리 (basic, bezier-vertex, quadratic, cubic) |
 
 ## codeOnly 처리 (브라우저 실행 불가)
 
@@ -21,8 +21,8 @@
 | 083 | Doodle Chrome Extension | Chrome Extension |
 | 084 | Word Definition Chrome Extension | Chrome Extension |
 | 039 | Mad Libs Generator | Tabletop.js (Google Sheets, 서비스 중단) |
-| 079 | Number Guessing Chatbot | RiveScript 라이브러리 필요 |
-| 080 | Voice Chatbot | RiveScript + p5.speech + 마이크 필요 |
+| ~~079~~ | ~~Number Guessing Chatbot~~ | ~~해결: files에서 brainrive.txt 제거 + rivescript.min.js 추가~~ |
+| ~~080~~ | ~~Voice Chatbot~~ | ~~해결: files에서 brainrive.txt 제거 + rivescript.min.js, p5.speech.js 추가~~ |
 | 118 | Fractal Tree Bot | Node.js 서버사이드 봇 |
 | 150 | AI Rainbows with RunwayML | RunwayML 서비스 필요 |
 | 157 | Video Annotations with ML | 카메라 필수 (sandbox 제한) |
@@ -33,20 +33,20 @@
 |---|---|---|
 | 032 | Agar.io | Part 2는 Express 서버 필요 (Part 1만 표시) |
 | 041 | Clappy Bird | 마이크 접근 필요 |
-| 057 | Mapping Earthquake Data | USGS API + Mappa.js (외부 API 제한 가능) |
-| 058 | 3D Earthquake Data Visualization | USGS API (외부 API 제한 가능) |
-| 066 | JavaScript Countdown Timer | #timer DOM 필요 → bodyHtml로 주입 |
-| 075 | Wikipedia API | CORS/JSONP 제한 가능 |
-| 113 | 4D Hypercube (Tesseract) | WEBGL이 iframe에서 불안정 |
-| 121 | Logo Interpreter | HTML 입력 폼 (#canvasDiv, #preset, #code) 필요 |
-| 128 | SketchRNN Snowflakes | ml5.js 모델 로드 시간/실패 가능 |
-| 134 | Heart Curve | p5 인스턴스 모드, 특수 DOM 컨테이너 필요 |
-| 136 | Perlin Noise Loops | p5 인스턴스 모드, 특수 DOM 컨테이너 (#part1-canvas, #part2-canvas) |
-| 151 | Ukulele Tuner | ml5 Pitch Detection + 마이크 (sandbox 제한) |
-| 153 | Interactive SketchRNN | ml5 SketchRNN 모델 로드 |
-| 157 | Video Annotations with ML | COCO-SSD + 카메라 (sandbox 제한) |
-| 079 | Number Guessing Chatbot | RiveScript 라이브러리 필요 |
-| 080 | Voice Chatbot | RiveScript + p5.speech + 마이크 필요 |
+| ~~057~~ | ~~Mapping Earthquake Data~~ | ~~정상 동작 확인~~ |
+| ~~058~~ | ~~3D Earthquake Data Visualization~~ | ~~정상 동작 확인~~ |
+| ~~066~~ | ~~JavaScript Countdown Timer~~ | ~~해결: bodyHtml로 주입~~ |
+| ~~075~~ | ~~Wikipedia API~~ | ~~정상 동작 확인~~ |
+| ~~113~~ | ~~4D Hypercube (Tesseract)~~ | ~~정상 동작 확인~~ |
+| ~~121~~ | ~~Logo Interpreter~~ | ~~해결: bodyHtml에 입력 폼 추가~~ |
+| ~~128~~ | ~~SketchRNN Snowflakes~~ | ~~정상 동작 확인~~ |
+| ~~134~~ | ~~Heart Curve~~ | ~~해결: P5MultiVersion으로 분리~~ |
+| ~~136~~ | ~~Perlin Noise Loops~~ | ~~해결: P5MultiVersion으로 분리~~ |
+| ~~151~~ | ~~Ukulele Tuner~~ | ~~정상 동작 확인~~ |
+| ~~153~~ | ~~Interactive SketchRNN~~ | ~~정상 동작 확인~~ |
+| 157 | Video Annotations with ML | WebGL 셰이더 + 카메라 (iframe 한계) |
+| ~~079~~ | ~~Number Guessing Chatbot~~ | ~~해결: codeOnly 해제~~ |
+| ~~080~~ | ~~Voice Chatbot~~ | ~~해결: codeOnly 해제~~ |
 
 ## bodyHtml 주입으로 해결
 
@@ -61,12 +61,13 @@
 | 079 | Number Guessing Chatbot | `<input id="user_input">`, `<button id="submit">` |
 | 080 | Voice Chatbot | `<span id="input">`, `<span id="output">` |
 | 094 | 2048 | `<p id="score">` |
-| 100 | Neuroevolution Flappy Bird | `<div id="canvasContainer">` |
+| 100 | Neuroevolution Flappy Bird | `<div id="canvasContainer">`, `<input id="speedSlider">`, `<button id="best">` 등 |
 | 122 | Quick Draw | `<div id="canvasDiv">` |
 | 140 | Leibniz Pi Approximation | `<div id="canvasDiv">` |
 | 141 | Calculating Pi with Mandelbrot | `<div id="canvasDiv">` |
 | 151 | Ukulele Tuner | `<div id="canvasDiv">` |
-| 158 | Shape Classifier | `<div id="controlDiv">` |
+| 121 | Logo Interpreter | `<textarea id="code">`, `<select id="preset">`, `<div id="canvasDiv">` |
+| 158 | Shape Classifier | `<div id="controlDiv">`, `<div id="canvasDiv">` |
 
 ## 파일 순서 수정
 

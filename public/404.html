@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+        // GitHub Pages SPA redirect
+        // Converts path to query parameter and redirects to index.html
+        // e.g. /coding-train/challenge/123_chaos_game -> /coding-train/?p=/challenge/123_chaos_game
+        var pathSegmentsToKeep = 1; // '/coding-train' base path
+        var l = window.location;
+        var fullPath = l.pathname;
+        var basePath = fullPath.split('/').slice(0, 1 + pathSegmentsToKeep).join('/');
+        var routePath = fullPath.split('/').slice(1 + pathSegmentsToKeep).join('/');
+        if (routePath) {
+            l.replace(
+                l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+                basePath + '/?p=/' + routePath +
+                (l.search ? '&q=' + l.search.slice(1) : '') +
+                l.hash
+            );
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

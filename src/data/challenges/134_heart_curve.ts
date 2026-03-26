@@ -13,7 +13,10 @@ registerChallenge({
     ],
     tags: ['heart', 'curve', 'parametric', 'math'],
     difficulty: 'beginner',
-    notice: '이 챌린지는 특수한 HTML 구조(div 컨테이너)가 필요하여 p5 인스턴스 모드로 실행됩니다. 일부 기능이 정상 동작하지 않을 수 있습니다.',
+    versions: [
+        { label: 'part1', files: [{ name: 'sketch.js', content: '' }] },
+        { label: 'part2', files: [{ name: 'sketch.js', content: '' }], libraries: ['gif.js'] },
+    ],
     explanation: [
         '하트 곡선의 매개변수 방정식은 x = 16*sin^3(t), y = 13*cos(t) - 5*cos(2t) - 2*cos(3t) - cos(4t)입니다. t를 0에서 TWO_PI까지 변화시키면 하트 모양이 완성됩니다.',
         'Part1은 기본 하트 그리기입니다. heartCurve() 함수로 각 t에서의 좌표를 계산하고, r=10 배율로 확대하여 beginShape()/vertex()로 연결합니다. scale(1,-1)로 y축을 반전하여 수학 좌표계를 사용합니다.',

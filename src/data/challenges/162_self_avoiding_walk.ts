@@ -8,12 +8,19 @@ registerChallenge({
     description: '격자 위에서 방문한 셀을 다시 방문하지 않는 자기 회피 보행을 다양한 방법으로 구현합니다.',
     files: ['spot.js', 'sketch.js'],
     libraries: [],
+    versions: [
+        { label: 'part1', files: [{ name: 'sketch.js', content: '' }] },
+        { label: 'part2', files: [{ name: 'spot.js', content: '' }, { name: 'sketch.js', content: '' }] },
+        { label: 'part3', files: [{ name: 'spot.js', content: '' }, { name: 'sketch.js', content: '' }] },
+        { label: 'part4', files: [{ name: 'spot.js', content: '' }, { name: 'sketch.js', content: '' }] },
+        { label: 'part5', files: [{ name: 'sketch.js', content: '' }] },
+        { label: 'part6', files: [{ name: 'sketch.js', content: '' }] },
+    ],
     references: [
         { title: 'Coding Challenge #162: Self-Avoiding Walk', url: 'https://thecodingtrain.com/challenges/162-self-avoiding-walk' },
     ],
     tags: ['self-avoiding', 'walk', 'grid', 'backtracking'],
     difficulty: 'intermediate',
-    notice: '이 챌린지는 p5 인스턴스 모드와 특수 DOM 컨테이너가 필요합니다. 일부 기능이 정상 동작하지 않을 수 있습니다.',
     explanation: [
         '자기 회피 보행(SAW)은 격자 위에서 이미 방문한 셀을 다시 방문하지 않는 경로입니다. Part1은 단순 랜덤 워크로, 유효한 이웃 중 랜덤 선택하다 막히면 멈춥니다.',
         'Part2는 백트래킹을 추가합니다. Spot 클래스로 격자를 관리하고, nextSpot()이 미방문 이웃을 반환합니다. 막히면 path.pop()으로 한 칸 돌아가고 visited를 해제하여 다른 경로를 시도합니다.',

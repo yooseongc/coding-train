@@ -11,6 +11,10 @@ registerChallenge({
     references: [
         { title: 'Coding Challenge #63: Texturing Cloth Simulation', url: 'https://thecodingtrain.com/challenges/63-texturing-cloth-simulation' },
     ],
+    versions: [
+        { label: 'part1', libraries: ['toxiclibs.min.js'], files: [{ name: 'toxi_index.js', content: '' }, { name: 'particle.js', content: '' }, { name: 'spring.js', content: '' }, { name: 'sketch.js', content: '' }] },
+        { label: 'part2', libraries: ['toxiclibs.min.js'], files: [{ name: 'toxi_index.js', content: '' }, { name: 'particle.js', content: '' }, { name: 'spring.js', content: '' }, { name: 'sketch.js', content: '' }] },
+    ],
     tags: ['cloth', 'texture', 'toxiclibs', 'physics'],
     difficulty: 'advanced',
     explanation: [

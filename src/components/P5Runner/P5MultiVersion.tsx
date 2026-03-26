@@ -10,6 +10,7 @@ interface Version {
 
 interface P5MultiVersionProps {
     versions: Version[]
+    challengeId?: string
     width?: number
     height?: number
     className?: string
@@ -21,6 +22,7 @@ interface P5MultiVersionProps {
  */
 export default function P5MultiVersion({
     versions,
+    challengeId,
     width = 600,
     height = 600,
     className = '',
@@ -53,6 +55,7 @@ export default function P5MultiVersion({
             <P5CodeView
                 files={current.files}
                 libraries={current.libraries}
+                challengeId={challengeId ? `${challengeId}/${current.label}` : undefined}
                 width={width}
                 height={height}
             />

@@ -14,7 +14,6 @@ registerChallenge({
     ],
     tags: ['wikipedia', 'API', 'fetch', 'DOM'],
     difficulty: 'intermediate',
-    notice: '이 챌린지는 Wikipedia API를 사용합니다. CORS 정책에 의해 iframe 내에서 API 호출이 제한될 수 있습니다.',
     explanation: [
         'MediaWiki API의 opensearch와 query 엔드포인트를 사용합니다. opensearch로 키워드 검색 결과를 가져오고, query로 문서 본문 내용을 가져옵니다. loadJSON()의 JSONP 모드로 크로스도메인 요청을 처리합니다.',
         'gotSearch()에서 검색 결과 중 랜덤으로 하나를 선택하고, gotContent()에서 해당 문서의 본문에서 4글자 이상 단어를 정규식(\\b\\w{4,}\\b)으로 추출하여 다음 검색 키워드로 사용합니다.',

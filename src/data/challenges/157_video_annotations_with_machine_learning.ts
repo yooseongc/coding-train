@@ -7,14 +7,14 @@ registerChallenge({
     categoryId: 'neural-networks-ml',
     description: 'Teachable Machine으로 훈련한 이미지 분류 모델로 웹캠 영상을 실시간 분류합니다.',
     files: ['sketch.js'],
-    libraries: ['ml5.min.js'],
-    codeOnly: true,
+    libraries: ['tf.min.js', 'ml5.min.js'],
     references: [
         { title: 'Coding Challenge #157: Video Annotations with Machine Learning', url: 'https://thecodingtrain.com/challenges/157-ml-video-annotations' },
     ],
     tags: ['video', 'annotation', 'cocossd', 'object-detection'],
     difficulty: 'intermediate',
-    notice: '이 챌린지는 ml5.js의 COCO-SSD 모델과 카메라 접근이 필요합니다. iframe sandbox 제한으로 카메라가 동작하지 않을 수 있습니다.',
+    codeOnly: true,
+    notice: 'TensorFlow.js WebGL 백엔드와 카메라 접근이 iframe sandbox 환경에서 제한되어 실행할 수 없습니다.',
     explanation: [
         'Google Teachable Machine으로 훈련한 커스텀 이미지 분류 모델을 ml5.imageClassifier로 로드합니다. 웹캠 영상을 실시간으로 분류하여 화면에 레이블을 표시합니다.',
         'preload()에서 model/model.json을 로드하고, setup()에서 createCapture(VIDEO)로 웹캠을 활성화합니다. ml5.flipImage()로 좌우 반전된 영상을 사용하여 거울 모드로 보여줍니다.',

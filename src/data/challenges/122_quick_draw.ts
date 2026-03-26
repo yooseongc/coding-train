@@ -8,6 +8,7 @@ registerChallenge({
     description: 'Google Quick Draw API에서 드로잉 데이터를 불러와 애니메이션으로 재생합니다.',
     files: ['sketch.js'],
     libraries: [],
+    codeOnly: true,
     bodyHtml: '<div id="canvasDiv"></div>',
     references: [
         { title: 'Coding Challenge #122: Quick, Draw!', url: 'https://thecodingtrain.com/challenges/122-quick-draw' },

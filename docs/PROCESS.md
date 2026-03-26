@@ -140,3 +140,23 @@
 - [x] KNOWN_ISSUES.md 작성 (멀티 러너 전환 필요, codeOnly, notice 목록)
 - [x] master → main 브랜치 이름 변경
 - [x] GitHub Actions 배포 완료 (https://yooseongc.github.io/coding-train)
+
+## Phase 10: 멀티 러너 전환 + 미포팅 멀티파트 챌린지
+
+### 2026-03-26
+- [x] P5MultiVersion 컴포넌트에 `challengeId` prop 추가 (에셋 로딩을 위한 `<base>` 태그 지원)
+- [x] ChallengePage에서 P5MultiVersion에 `challengeId` 전달
+- [x] 인스턴스 모드 → 글로벌 모드 변환 + P5MultiVersion 탭 분리
+  - 123 Chaos Game: 2파트 (Sierpinski Triangle / Pentagonal n-flake)
+  - 134 Heart Curve: 2파트 (기본 하트 / 비팅 하트 + GIF)
+  - 136 Perlin Noise Loops: 2파트 (Polar 노이즈 / Particles + GIF)
+  - 162 Self-Avoiding Walk: 6파트 (basic / backtracking / 3D WEBGL / bezier / recursive / random walk)
+  - 163 Bezier Curves: 4파트 (basic / bezier-vertex / quadratic / cubic)
+- [x] 미포팅 멀티파트 챌린지 코드 복사 + 메타데이터 업데이트
+  - 063 Texturing Cloth Simulation: 2파트 (toxi_index.js, particle.js, spring.js, unikitty.jpg 포함)
+  - 081 Circle Morphing: 2파트
+  - 130 Drawing with Fourier Transform: 3파트 (codingtrain.js, fourier.js, complex.js 포함)
+  - 142 Rubik's Cube: 2파트 (p5.easycam.min.js 라이브러리 포함)
+  - 161 Estimating Pi: 2파트 (milliondigits.txt, pi1000000.txt 데이터 파일 포함)
+- [x] TypeScript + Vite 빌드 통과 (17개 SPA 라우트)
+- [x] KNOWN_ISSUES.md 업데이트 (멀티 러너 항목 해결 표시)

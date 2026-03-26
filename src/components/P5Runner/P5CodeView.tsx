@@ -107,29 +107,44 @@ export default function P5CodeView({
         </div>
     )
 
+    const MAX_CODE_DISPLAY_SIZE = 50 * 1024 // 50KB
+    const isFileTooLarge = activeFile.content.length > MAX_CODE_DISPLAY_SIZE
+    const fileSizeKB = (activeFile.content.length / 1024).toFixed(1)
+
     const codePanel = (
         <div className="flex-1 relative min-h-0 bg-[#0d1117]">
-            <div
-                ref={codeScrollRef}
-                onScroll={checkScroll}
-                className="absolute inset-0 overflow-auto"
-            >
-                <SyntaxHighlighter
-                    language="javascript"
-                    style={vscDarkPlus}
-                    customStyle={{ margin: 0, borderRadius: 0, background: '#0d1117', fontSize: '0.82rem', minHeight: '100%' }}
-                    showLineNumbers
-                >
-                    {activeFile.content.trim()}
-                </SyntaxHighlighter>
-            </div>
-            {canScrollDown && (
-                <div className="absolute bottom-0 left-0 right-0 pointer-events-none z-10">
-                    <div className="h-8 bg-gradient-to-t from-[#0d1117] to-transparent" />
-                    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-[10px] text-gray-500 bg-gray-800/80 rounded-full px-2 py-0.5 animate-bounce">
-                        ↓ scroll
-                    </div>
+            {isFileTooLarge ? (
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-gray-500 px-6 text-center">
+                    <span className="text-3xl mb-3 opacity-50">📄</span>
+                    <p className="text-sm font-mono mb-1">{activeFile.name} ({fileSizeKB} KB)</p>
+                    <p className="text-xs">파일이 너무 커서 코드 뷰에 표시하지 않습니다.</p>
+                    <p className="text-xs text-gray-600 mt-1">스케치 실행에는 영향이 없습니다.</p>
                 </div>
+            ) : (
+                <>
+                    <div
+                        ref={codeScrollRef}
+                        onScroll={checkScroll}
+                        className="absolute inset-0 overflow-auto"
+                    >
+                        <SyntaxHighlighter
+                            language="javascript"
+                            style={vscDarkPlus}
+                            customStyle={{ margin: 0, borderRadius: 0, background: '#0d1117', fontSize: '0.82rem', minHeight: '100%' }}
+                            showLineNumbers
+                        >
+                            {activeFile.content.trim()}
+                        </SyntaxHighlighter>
+                    </div>
+                    {canScrollDown && (
+                        <div className="absolute bottom-0 left-0 right-0 pointer-events-none z-10">
+                            <div className="h-8 bg-gradient-to-t from-[#0d1117] to-transparent" />
+                            <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-[10px] text-gray-500 bg-gray-800/80 rounded-full px-2 py-0.5 animate-bounce">
+                                ↓ scroll
+                            </div>
+                        </div>
+                    )}
+                </>
             )}
         </div>
     )

@@ -13,7 +13,6 @@ registerChallenge({
     ],
     tags: ['earthquake', 'map', 'data', 'geolocation'],
     difficulty: 'intermediate',
-    notice: '이 챌린지는 USGS 지진 데이터 API와 Mappa.js 라이브러리가 필요합니다. 외부 API 접근이 제한될 수 있어 지도가 표시되지 않을 수 있습니다.',
     explanation: [
         'USGS earthquake API에서 최근 한 달간의 지진 CSV 데이터를 loadStrings()로 불러옵니다. 각 행을 쉼표로 split하여 위도(latitude), 경도(longitude), 규모(magnitude)를 추출합니다.',
         'mercX()와 mercY() 함수로 웹 메르카토르 투영(Web Mercator Projection)을 구현합니다. 경도는 선형 변환, 위도는 tan(PI/4 + lat/2)의 로그를 사용하여 구면 좌표를 평면으로 변환합니다.',

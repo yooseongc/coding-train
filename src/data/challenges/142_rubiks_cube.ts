@@ -8,6 +8,10 @@ registerChallenge({
     description: 'p5.js WEBGL 모드로 3x3x3 루빅스 큐브를 3D로 렌더링합니다.',
     files: ['cubie.js', 'sketch.js'],
     libraries: ['p5.easycam.min.js'],
+    versions: [
+        { label: 'part1', libraries: ['p5.easycam.min.js'], files: [{ name: 'cubie.js', content: '' }, { name: 'sketch.js', content: '' }] },
+        { label: 'part2', libraries: ['p5.easycam.min.js'], files: [{ name: 'cubie.js', content: '' }, { name: 'face.js', content: '' }, { name: 'move.js', content: '' }, { name: 'sketch.js', content: '' }] },
+    ],
     references: [
         { title: "Coding Challenge #142: Rubik's Cube", url: 'https://thecodingtrain.com/challenges/142-rubiks-cube' },
     ],

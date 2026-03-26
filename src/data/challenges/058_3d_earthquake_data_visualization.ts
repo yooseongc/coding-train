@@ -13,7 +13,6 @@ registerChallenge({
     ],
     tags: ['earthquake', '3D', 'globe', 'WEBGL'],
     difficulty: 'intermediate',
-    notice: '이 챌린지는 USGS 지진 데이터 API가 필요합니다. 외부 API 접근이 제한될 수 있어 데이터가 로드되지 않을 수 있습니다.',
     explanation: [
         'WEBGL 모드에서 sphere(r)로 구를 만들고 earth.jpg 텍스처를 입힙니다. createEasyCam()으로 마우스 드래그 회전과 줌을 지원하는 3D 카메라를 설정합니다.',
         'll2xyz() 함수로 위도/경도를 구면좌표계에서 직교좌표(x,y,z)로 변환합니다. theta=radians(lat), phi=radians(lon)+PI를 사용하여 cos/sin 조합으로 3D 위치를 계산합니다.',

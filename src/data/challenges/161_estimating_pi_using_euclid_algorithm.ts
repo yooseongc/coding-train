@@ -8,6 +8,10 @@ registerChallenge({
     description: '유클리드 호제법으로 두 정수의 서로소 확률을 구하고, 이를 통해 Pi를 추정합니다.',
     files: ['sketch.js'],
     libraries: [],
+    versions: [
+        { label: 'part1_from_random_numbers', files: [{ name: 'sketch.js', content: '' }] },
+        { label: 'part2_from_digits_of_pi', files: [{ name: 'sketch.js', content: '' }] },
+    ],
     references: [
         { title: 'Coding Challenge #161: Estimating Pi using Euclid Algorithm', url: 'https://thecodingtrain.com/challenges/161-pi-from-random-numbers' },
     ],

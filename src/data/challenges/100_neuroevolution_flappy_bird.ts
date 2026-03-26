@@ -8,13 +8,12 @@ registerChallenge({
     description: '유전 알고리즘과 신경망을 결합한 신경진화(Neuroevolution)로 Flappy Bird를 자동 플레이하는 AI를 훈련합니다.',
     files: ['matrix.js', 'nn.js', 'bird.js', 'ga.js', 'pipe.js', 'sketch.js'],
     libraries: [],
-    bodyHtml: '<div id="canvasContainer"></div>',
+    bodyHtml: '<div id="canvasContainer"></div><p>speed: <input id="speedSlider" type="range" min="1" max="10" value="1"><span id="speed">1</span><br>high score: <span id="highScore">0</span><br>all time high score: <span id="allTimeHighScore">0</span></p><p><button id="best">run best so far</button></p>',
     references: [
         { title: 'Coding Challenge #100: Neuroevolution Flappy Bird', url: 'https://thecodingtrain.com/challenges/100-neuroevolution-flappy-bird' },
     ],
     tags: ['neuroevolution', 'flappy', 'genetic', 'NEAT'],
     difficulty: 'advanced',
-    notice: '이 챌린지는 신경망과 유전 알고리즘을 사용합니다. iframe 환경에서 일부 기능이 불안정할 수 있습니다.',
     explanation: [
         '500마리의 새(totalPopulation)가 동시에 플레이합니다. 각 Bird는 신경망(brain)을 가지고, think()에서 파이프와의 거리 등을 입력으로 점프 여부를 결정합니다. 파이프에 부딪히거나 화면 밖으로 나가면 탈락합니다.',
         'ga.js의 유전 알고리즘이 세대를 진화시킵니다. 모든 새가 탈락하면 nextGeneration()으로 높은 score의 새를 선택(selection)하고, 신경망 가중치에 돌연변이(mutation)를 적용하여 다음 세대를 생성합니다.',

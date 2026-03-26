@@ -13,7 +13,6 @@ registerChallenge({
     ],
     tags: ['sketchRNN', 'snowflake', 'ml5', 'generative'],
     difficulty: 'intermediate',
-    notice: '이 챌린지는 ml5.js의 SketchRNN 모델이 필요합니다. 모델 로드에 시간이 걸리거나 실패할 수 있습니다.',
     explanation: [
         'SketchRNN은 Google Magenta 팀이 Quick, Draw! 데이터로 훈련한 순환 신경망(RNN)으로, 카테고리별 낙서를 생성할 수 있습니다. ml5.js를 통해 "snowflake" 모델을 로드합니다.',
         'model.generate(gotSketch)로 다음 획(stroke)을 비동기적으로 받아옵니다. strokePath.dx/dy에 0.2를 곱한 스케일로 x, y를 업데이트하며, pen이 "down"일 때만 line()을 그립니다.',

@@ -11,6 +11,10 @@ registerChallenge({
     references: [
         { title: 'Coding Challenge #81: Circle Morphing', url: 'https://thecodingtrain.com/challenges/81-circle-morphing' },
     ],
+    versions: [
+        { label: 'part1', files: [{ name: 'sketch.js', content: '' }] },
+        { label: 'part2', files: [{ name: 'sketch.js', content: '' }] },
+    ],
     tags: ['morphing', 'circle', 'polar', 'animation'],
     difficulty: 'intermediate',
     explanation: [

@@ -8,13 +8,12 @@ registerChallenge({
     description: 'ml5.js 신경망으로 손그림 도형(원, 사각형, 삼각형)을 실시간 분류하는 모델을 훈련합니다.',
     files: ['sketch.js'],
     libraries: ['ml5.min.js'],
-    bodyHtml: '<div id="controlDiv"></div>',
+    bodyHtml: '<div id="controlDiv"></div><div id="canvasDiv"></div>',
     references: [
         { title: 'Coding Challenge #158: Shape Classifier', url: 'https://thecodingtrain.com/challenges/158-shape-classifier' },
     ],
     tags: ['shape', 'classifier', 'neural-network', 'training'],
     difficulty: 'intermediate',
-    notice: '이 챌린지는 ml5.js 신경망과 학습 데이터 이미지가 필요합니다. 모델 학습에 시간이 걸릴 수 있습니다.',
     explanation: [
         'ml5.neuralNetwork로 이미지 분류 모델을 생성하여 원, 사각형, 삼각형을 분류합니다. 각 도형 500장(총 1500장)의 64x64 훈련 이미지를 data/ 폴더에서 로드합니다.',
         'Train Model 버튼으로 훈련을 시작합니다. addData()로 이미지-레이블 쌍을 추가하고 normalizeData() 후 50 에포크 동안 훈련합니다. 훈련 완료 시 모델을 JSON으로 저장합니다.',
