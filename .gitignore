@@ -12,6 +12,10 @@ node_modules/
 .env.local
 .env.*.local
 
+# ── Claude Code ────────────────────────────────────────────────────────────
+.claude/settings.local.json
+.claude/worktrees/
+
 # ── Editor ──────────────────────────────────────────────────────────────────
 .vscode/*
 !.vscode/tasks.json
