@@ -34,4 +34,4 @@ pnpm dev
 pnpm build  # tsc + vite build + SPA route generation
 ```
 
-`master` 브랜치에 push하면 GitHub Actions가 자동으로 GitHub Pages에 배포합니다.
+`main` 브랜치에 push하면 GitHub Actions가 자동으로 GitHub Pages에 배포합니다.
