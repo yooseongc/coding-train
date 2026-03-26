@@ -1,0 +1,33 @@
+
+class Particle {
+
+    constructor(x, y) {
+        this.locked = false;
+        this.acceleration = createVector(0, 0);
+        this.velocity = createVector(0, 0);
+        this.position = createVector(x, y);
+        this.mass = 1;
+    }
+
+    applyForce(force) {
+        let f = force.copy();
+        f.div(this.mass);  // acc
+        this.acceleration.add(f);
+    }
+
+    update() {
+        if (this.locked) return;
+        this.velocity.mult(0.99); // damping
+        this.velocity.add(this.acceleration);
+        this.position.add(this.velocity);
+        this.acceleration.mult(0);
+    }
+
+    show() {
+        stroke(255);
+        strokeWeight(2);
+        fill(45, 197, 244);
+        ellipse(this.position.x, this.position.y, 16);
+    }
+
+}
