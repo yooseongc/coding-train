@@ -21,13 +21,18 @@ registerChallenge({
 <div id="canvasDiv"></div>`,
     references: [
         { title: 'Coding Challenge #121: Logo Interpreter', url: 'https://thecodingtrain.com/challenges/121-logo-interpreter' },
+        { title: 'Wikipedia - Logo (programming language)', url: 'https://en.wikipedia.org/wiki/Logo_(programming_language)' },
+        { title: 'Logo Tutorial - Brown University', url: 'http://cs.brown.edu/courses/bridge/1997/Resources/LogoTutorial.html' },
+        { title: 'Wikipedia - Turtle graphics', url: 'https://en.wikipedia.org/wiki/Turtle_graphics' },
     ],
     tags: ['logo', 'turtle', 'interpreter', 'parser'],
     difficulty: 'advanced',
     explanation: [
-        'Logo는 1967년에 만들어진 교육용 프로그래밍 언어로, 터틀(거북이)을 이동시켜 그림을 그리는 것이 특징입니다. 이 챌린지에서는 Logo의 핵심 명령어(fd, bd, rt, lt, pu, pd, repeat)를 해석하는 인터프리터를 구현합니다.',
-        'Parser 클래스가 텍스트를 토큰으로 분리하고 Command 객체 배열로 변환합니다. 이동(fd/bd), 회전(rt/lt), 펜 제어(pu/pd), 반복(repeat) 명령을 정규식으로 분류하며, repeat는 대괄호 내부를 재귀적으로 파싱합니다.',
-        'Turtle 클래스는 translate()과 rotate()로 좌표계를 변환하며 이동합니다. pen 상태에 따라 line()으로 경로를 그리고, forward()에서 translate()로 위치를 업데이트합니다.',
-        '에디터에 코드를 입력하면 goTurtle()이 호출되어 파싱 후 execute()로 명령을 실행합니다. 프리셋 선택으로 다양한 패턴(별, 나선 등)을 즉시 확인할 수 있습니다.',
+        'Logo는 1967년 시모어 페이퍼트(Seymour Papert), 월리 퍼지그(Wally Feurzeig), 신시아 솔로몬(Cynthia Solomon)이 개발한 교육용 프로그래밍 언어입니다. MIT AI Lab에서 탄생한 Logo는 구성주의(Constructionism) 교육 철학에 기반하며, 어린이들이 프로그래밍을 통해 수학적 사고를 발전시키도록 설계되었습니다.',
+        '터틀 그래픽스(Turtle Graphics)는 Logo의 가장 유명한 기능으로, 화면 위의 가상 거북이에게 이동(fd/bd)과 회전(rt/lt) 명령을 내려 그림을 그립니다. 이 개념은 Python의 turtle 모듈, Scratch, 그리고 다양한 프로그래밍 교육 도구에 계승되었습니다. 펜 올리기(pu)/내리기(pd)로 그리기를 제어합니다.',
+        'Parser 클래스가 텍스트를 토큰(Token)으로 분리하고 Command 객체 배열로 변환합니다. 이것은 프로그래밍 언어 구현의 기본 과정인 어휘 분석(Lexical Analysis)과 구문 분석(Parsing)을 간략화한 것입니다. repeat 명령의 대괄호 내부를 재귀적으로 파싱하여 중첩된 반복을 지원합니다.',
+        'Turtle 클래스는 translate()과 rotate()로 좌표계를 변환하는 상대 좌표 시스템을 사용합니다. 절대 좌표 대신 거북이의 현재 위치와 방향을 기준으로 이동하므로, 복잡한 도형도 간단한 반복 명령으로 그릴 수 있습니다. 이는 로봇 공학의 경로 계획과도 유사한 개념입니다.',
+        '에디터에 코드를 입력하면 goTurtle()이 호출되어 파싱 후 execute()로 명령을 실행합니다. 프리셋에는 삼각형, 사각형, 집, 필로탁시스(Phyllotaxis) 패턴 등이 포함되어 있으며, repeat 36 [lt 10 pu fd 1 pd repeat 120 [fd 2 rt 3]] 같은 중첩 반복으로 복잡한 나선 패턴을 생성합니다.',
+        'Logo는 LISP에서 영감을 받은 함수형 프로그래밍 요소도 가지고 있었으며, 인공지능 연구와 교육 혁신에 큰 영향을 미쳤습니다. 시모어 페이퍼트의 저서 "Mindstorms: Children, Computers, and Powerful Ideas"(1980)는 컴퓨터 교육의 고전으로, Logo를 통한 구성주의적 학습의 비전을 제시했습니다.',
     ],
 })
