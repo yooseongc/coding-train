@@ -204,3 +204,25 @@
 - [x] ConsolePanel: 라이트 모드 색상 대비 개선
 - [x] 전체: aria-label, role=log/status, focus-visible 링 접근성 개선
 - [x] study-ui-lib docs-site Sprint 2 반영
+
+## Phase 13: 버그 수정 및 챌린지 문서 보강
+
+### 2026-03-28 — 버그 수정
+- [x] study-ui-lib CONSOLE_BRIDGE_SCRIPT 닫는 태그 이스케이프 오류 수정 (`<\\/script>` → `<\/script>`)
+- [x] study-ui-lib NestedSidebar 검색 단축키 ⌘K 표시 깨짐 수정
+
+### 2026-03-28 — 챌린지 문서 보강 (전체 164개)
+- [x] `/enrich-challenges` 스킬 생성 (`.claude/skills/enrich-challenges.md`)
+- [x] text-nlp 카테고리 10개 챌린지 보강 (마르코프 체인, CFG, 감성 분석 등)
+- [x] fractals 카테고리 11개 챌린지 보강 (만델브로, L-시스템, 코흐 눈꽃 등)
+- [x] drawing-animation 카테고리 12개 챌린지 보강 (이슬람 문양, 7세그먼트 등)
+- [x] 3d-geometry 카테고리 13개 챌린지 보강 (초타원, 메타볼, 하이퍼큐브 등)
+- [x] data-visualization 카테고리 13개 챌린지 보강 (로렌츠, 반응-확산 등)
+- [x] neural-networks-ml 카테고리 13개 챌린지 보강 (XOR, TensorFlow.js 등)
+- [x] games 카테고리 16개 챌린지 보강 (Game of Life, 미니맥스 AI 등)
+- [x] physics-simulation 카테고리 19개 챌린지 보강 (이중 진자, 유체 시뮬레이션 등)
+- [x] creative-coding 카테고리 25개 챌린지 보강 (디더링, 노이즈 루프 등)
+- [x] math-algorithms 카테고리 34개 챌린지 보강 (푸리에, A*, 퀵소트 등)
+- [x] 전체 164개 챌린지 explanation 4-6 단락으로 확장 (수학/역사/응용 맥락 추가)
+- [x] 전체 164개 챌린지 references에 Wikipedia, API 문서, 학술 자료 등 2-4개씩 추가
+- [x] TypeScript 검증 통과
