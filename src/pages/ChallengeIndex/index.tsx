@@ -60,7 +60,7 @@ export default function ChallengeIndex() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-4 gap-3 mb-6">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
                 <StatBadge label="전체" count={stats.total} color="text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-800" />
                 <StatBadge label="입문" count={stats.beginner} color="text-green-700 dark:text-green-300 bg-green-50 dark:bg-green-900/30" />
                 <StatBadge label="중급" count={stats.intermediate} color="text-blue-700 dark:text-blue-300 bg-blue-50 dark:bg-blue-900/30" />
@@ -78,12 +78,14 @@ export default function ChallengeIndex() {
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
                         placeholder="제목, 태그, 번호로 검색..."
+                        aria-label="챌린지 검색"
                         className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500/50 focus:border-pink-500"
                     />
                 </div>
                 <select
                     value={selectedCategory ?? ''}
                     onChange={(e) => setSelectedCategory(e.target.value || null)}
+                    aria-label="카테고리 필터"
                     className="px-3 py-2.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm text-gray-700 dark:text-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500/50"
                 >
                     <option value="">모든 카테고리</option>
@@ -96,6 +98,7 @@ export default function ChallengeIndex() {
                 <select
                     value={selectedDifficulty ?? ''}
                     onChange={(e) => setSelectedDifficulty(e.target.value || null)}
+                    aria-label="난이도 필터"
                     className="px-3 py-2.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm text-gray-700 dark:text-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500/50"
                 >
                     <option value="">모든 난이도</option>

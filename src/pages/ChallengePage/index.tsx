@@ -4,6 +4,8 @@ import { getChallenge, fetchAllSketchFiles, SKETCHES_BASE } from '../../data/cha
 import { getCategoryForChallenge } from '../../data/categories'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
+import { oneLight } from 'react-syntax-highlighter/dist/esm/styles/prism'
+import { useIsDark } from '@study-ui/components'
 import P5CodeView from '../../components/P5Runner/P5CodeView'
 import P5MultiVersion from '../../components/P5Runner/P5MultiVersion'
 import type { SketchFile } from '../../types/challenge'
@@ -13,6 +15,7 @@ export default function ChallengePage() {
     const { challengeId } = useParams<{ challengeId: string }>()
     const challenge = challengeId ? getChallenge(challengeId) : undefined
     const category = challengeId ? getCategoryForChallenge(challengeId) : undefined
+    const isDark = useIsDark()
     useTitle(challenge ? `#${String(challenge.number).padStart(3, '0')} ${challenge.title}` : '챌린지')
     const [files, setFiles] = useState<SketchFile[]>([])
     const [versionFiles, setVersionFiles] = useState<Array<{ label: string; files: SketchFile[]; libraries?: string[] }>>([])
@@ -129,8 +132,8 @@ export default function ChallengePage() {
                             </div>
                             <SyntaxHighlighter
                                 language={file.name.endsWith('.json') ? 'json' : 'javascript'}
-                                style={vscDarkPlus}
-                                customStyle={{ margin: 0, borderRadius: 0, background: '#0d1117', fontSize: '0.82rem' }}
+                                style={isDark ? vscDarkPlus : oneLight}
+                                customStyle={{ margin: 0, borderRadius: 0, background: isDark ? '#0d1117' : '#fafbfc', fontSize: '0.82rem' }}
                                 showLineNumbers
                             >
                                 {file.content.trim()}
