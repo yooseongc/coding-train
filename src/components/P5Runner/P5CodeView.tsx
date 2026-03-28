@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { CodeViewer } from '@study-ui/components'
 import type { FileGroup } from '@study-ui/components'
 import type { SketchFile } from '../../types/challenge'
@@ -22,6 +23,10 @@ export default function P5CodeView({
     height = 600,
     className = '',
 }: P5CodeViewProps) {
+    const [editedFiles, setEditedFiles] = useState<SketchFile[] | null>(null)
+
+    const activeFiles = editedFiles ?? files
+
     const fileGroups: FileGroup[] = []
 
     if (libraries.length > 0) {
@@ -40,7 +45,7 @@ export default function P5CodeView({
 
     const runner = (
         <P5Runner
-            files={files}
+            files={activeFiles}
             libraries={libraries}
             challengeId={challengeId}
             bodyHtml={bodyHtml}
@@ -51,11 +56,13 @@ export default function P5CodeView({
 
     return (
         <CodeViewer
-            files={files}
+            files={activeFiles}
             fileGroups={fileGroups}
             runner={runner}
             language="javascript"
             runnerHeight={height}
+            editable
+            onFilesChange={setEditedFiles}
             className={className}
         />
     )
