@@ -226,3 +226,26 @@
 - [x] 전체 164개 챌린지 explanation 4-6 단락으로 확장 (수학/역사/응용 맥락 추가)
 - [x] 전체 164개 챌린지 references에 Wikipedia, API 문서, 학술 자료 등 2-4개씩 추가
 - [x] TypeScript 검증 통과
+
+## Phase 14: 프로젝트 업그레이드
+
+### 2026-03-28 — Sprint 3: CodeViewer UX 개선 (study-ui-lib)
+- [x] 코드 횡스크롤바 상시 표시 (overflow-scroll + 커스텀 스크롤바 CSS)
+- [x] 코드 편집(Edit) 기능 추가 (textarea 편집 → Run 버튼/Ctrl+Enter로 실행)
+- [x] P5CodeView에서 편집 기능 연동 (수정된 코드로 스케치 즉시 재실행)
+- [x] IframeRunner 해상도 표시 × 깨짐 수정, JSX 유니코드 이스케이프 수정
+
+### 2026-03-28 — Sprint 4: 검색/탐색 UX 개선
+- [x] searchIndex에 163개 챌린지 통합 (⌘K에서 바로 챌린지 검색/이동 가능)
+- [x] glossary.ts에 40개+ 용어 추가 (p5.js, 알고리즘, 수학, 물리, ML)
+- [x] Glossary 페이지 구현 (검색, 카테고리 필터, 카드 UI)
+- [x] /glossary 라우트 추가, NestedSidebar footer에 용어 사전 링크 추가
+
+### 2026-03-28 — Sprint 5: UI/반응형/접근성
+- [x] ChallengeIndex 통계 뱃지 모바일 반응형 (grid-cols-2 sm:grid-cols-4)
+- [x] ChallengeIndex 검색/필터 aria-label 추가
+- [x] ChallengePage codeOnly 라이트모드 구문 강조 지원
+
+### 2026-03-28 — Sprint 6: 인프라 정리
+- [x] rollup-plugin-visualizer 추가 (빌드 시 dist/stats.html 번들 분석)
+- [x] d3/three/mermaid는 study-ui-lib 소스 의존으로 유지 필요 확인
