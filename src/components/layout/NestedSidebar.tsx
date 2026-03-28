@@ -48,7 +48,8 @@ export default function NestedSidebar({ onSearchOpen, mobileOpen, onMobileClose,
     ], [])
 
     const footerLinks: NavExtra[] = useMemo(() => [
-        { route: '/challenges', label: '\uCF54\uB529 \uCC4C\uB9B0\uC9C0 \uBAA9\uB85D' },
+        { route: '/challenges', label: '코딩 챌린지 목록' },
+        { route: '/glossary', label: '용어 사전' },
     ], [])
 
     return (

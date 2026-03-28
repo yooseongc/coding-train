@@ -14,6 +14,7 @@ const GuideToyNeuralNetwork = lazy(() => import('./pages/GuideToyNeuralNetwork')
 const GuideTensorflow = lazy(() => import('./pages/GuideTensorflow'))
 const GuidePerlinNoise = lazy(() => import('./pages/GuidePerlinNoise'))
 const GuideChromeExtension = lazy(() => import('./pages/GuideChromeExtension'))
+const Glossary = lazy(() => import('./pages/Glossary'))
 
 function PageFallback() {
     return (
@@ -50,6 +51,7 @@ export default function App() {
                                 <Route path="guide/tensorflow" element={<GuideTensorflow />} />
                                 <Route path="guide/perlin-noise" element={<GuidePerlinNoise />} />
                                 <Route path="guide/chrome-extension" element={<GuideChromeExtension />} />
+                                <Route path="glossary" element={<Glossary />} />
                             </Route>
                         </Route>
                     </Routes>
